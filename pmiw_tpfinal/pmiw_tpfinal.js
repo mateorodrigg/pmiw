@@ -8,7 +8,7 @@ let textos = [
   "Tras la muerte de su esposa, Subercasaux vive solo en un rancho en la selva misionera junto a sus dos hijos pequeños.", 
   "El clima húmedo y los piques se propagan. La infección en su pie empeora y, sin poder descansar, la herida se agrava.", 
   "Las lluvias aíslan el rancho. Necesita ayuda médica urgente para tratar la infección, pero salir es una locura.", 
-  "¿Que hacer?", // 4
+  "¿Que hacer?", 
   "A pesar del mal tiempo, decide salir. La lluvia, el viento y la corriente dificultan el viaje. Tras horas de esfuerzo, no consigue lo que necesita.", 
   "Al día siguiente, despierta con escalofríos. El dolor en el pie ha desaparecido de golpe, pero siente que las fuerzas le fallan de manera extraña.", 
   "¿Cómo priorizar las pocas fuerzas que le quedan?", 
