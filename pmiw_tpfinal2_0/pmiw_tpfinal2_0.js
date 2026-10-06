@@ -1,5 +1,5 @@
 // Integrantes: Mateo Rodríguez y Juan Mendoza Tamalet
-// Trabajo Práctico: El Desierto, de Horacio Quiroga (p5.js adaptado a Flowchart y textos.txt)
+// Trabajo Práctico: El Desierto, de Horacio Quiroga 
 
 let estado = 0;
 let textos = [];
