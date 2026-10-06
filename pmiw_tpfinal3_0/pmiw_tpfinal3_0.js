@@ -51,9 +51,9 @@ function obtenerIndiceImagen(numEstado) {
   } else if (numEstado == 1) {
     return 1; 
   } else if (numEstado == 2) {
-    return 2; // infeccion
+    return 2; 
   } else if (numEstado == 3) {
-    return 3; // aislado
+    return 3; 
   } else if (numEstado == 4) {
     return 4; // decision
   } else if (numEstado == 5) {
