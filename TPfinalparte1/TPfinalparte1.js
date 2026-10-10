@@ -1,13 +1,14 @@
 // Integrantes: Mateo Rodríguez y Juan Mendoza Tamalet
 // Trabajo practico: El Desierto, de Horacio Quiroga 
+// URL: https://youtu.be/_p7JHiVy44E
 
 let estado = 0;
 let textos = [];
 let imagenes = []; 
 
-// Nombres para la pantalla de créditos y control de opacidad (Fade In)
-let nombresCreditos = "\n\nEl Desierto de Horacio Quiroga\n aventura grafica hecha por:\nJuan Mendoza Tamalet y Mateo Bautista Rodríguez";
-let alfaCreditos = 0;
+// Nombres para la pantalla de créditos y control de opacidad
+let nombresCreditos = "\n\nEl Desierto de Horacio Quiroga\naventura grafica hecha por:\nJuan Mendoza Tamalet y Mateo Bautista Rodríguez";
+let opCreditos = 0;
 
 // Fuentes
 let fuenteText;
@@ -196,17 +197,17 @@ function mostrarCajaYTexto(numEstado) {
 }
 // creditos
 function dibujarCreditosFinales() {
-  if (alfaCreditos < 255) {
-    alfaCreditos += 3;
-    if (alfaCreditos > 255) {
-      alfaCreditos = 255;
+  if (opCreditos < 255) {
+    opCreditos += 3;
+    if (opCreditos > 255) {
+      opCreditos = 255;
     }
   }
 
   noStroke();
   textSize(25); 
   textAlign(CENTER, CENTER);
-  fill(0, alfaCreditos); 
+  fill(0, opCreditos); 
   
   textFont(fuenteCreditos);
   text(nombresCreditos, width / 2, height / 2 - 15);
@@ -332,7 +333,7 @@ function mousePressed() {
   }
 
   if (estado !== estadoAnterior) {
-    alfaCreditos = 0;
+    opCreditos = 0;
   }
   
   // Sonido desde el estado 1 hasta los creditos
