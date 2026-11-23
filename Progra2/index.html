@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aventura gráfica</title>
+  </head>
+  <body>
+    <nav class="border fixed split-nav">
+      <div class="nav-brand">
+        <h3><a href="#historia">Aventura gráfica</a></h3>
+      </div>
+      <div class="collapsible">
+        <input id="collapsible1" type="checkbox" name="collapsible1" />
+        <label for="collapsible1">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="collapsible-body">
+          <ul class="inline">
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#desarrollo">Cómo la hicimos</a></li>
+            <li><a href="#sprites">Sprites</a></li>
+            <li><a href="#juego">Juego</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="paper container">
+      <section id="historia">
+        <div class="row">
+          <div class="section-row-content">
+            <h1>Historia</h1>
+            <div class="story-layout">
+              <img
+                class="border story-image"
+                src="IMG/Desierto.jpg"
+                alt="Imagen del libro El desierto"
+              />
+              <div class="story-copy">
+                <p>
+                  El cuento «El desierto», publicado en 1923, narra la vida aislada
+                  en la selva misionera de Subercasaux y sus dos hijos pequeños,
+                  Brunito y Tita. Lejos de la ciudad, los tres deben arreglárselas
+                  por sí mismos en un entorno donde la naturaleza marca el ritmo de
+                  cada día. La tranquilidad de su vida se quiebra cuando Subercasaux
+                  enferma de repente y ya no puede cuidar de sus hijos como antes.
+                  La historia muestra la preocupación de los niños y los esfuerzos
+                  del padre por protegerlos, mientras explora el amor familiar y la
+                  vulnerabilidad humana frente a una naturaleza hostil.
+                </p>
+              </div>
+            </div>
+            <div class="row flex-spaces child-borders">
+              <label class="paper-btn margin" for="modal-1">Conocer a Horacio Quiroga</label>
+            </div>
+            <input class="modal-state" id="modal-1" type="checkbox" />
+            <div class="modal">
+              <label class="modal-bg" for="modal-1"></label>
+              <div class="modal-body">
+                <label class="btn-close" for="modal-1">X</label>
+                <h4 class="modal-title">Horacio Quiroga</h4>
+                <h5 class="modal-subtitle">Escritor uruguayo</h5>
+                <p class="modal-text">
+                  (1878–1937) fue un escritor uruguayo, reconocido por sus cuentos
+                  ambientados en la selva y por explorar la relación entre las
+                  personas y la naturaleza.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="desarrollo">
+        <div class="row">
+          <div class="section-row-content">
+            <h2>Cómo hicimos la aventura gráfica</h2>
+            <h3>Primer trabajo</h3>
+            <p>
+              Dividimos el cuento en sus momentos más importantes y los fuimos
+              narrando, identificando en cuáles se podían tomar distintas
+              decisiones. Al comienzo, por ejemplo, Subercasaux sale y regresa en el
+              cuento; en nuestra aventura decidimos que el jugador pudiera elegir
+              entre salir o quedarse. Decidimos retratar cada parte del cuento con
+              fotografías y textos que fuimos creando para acompañar la narración.
+            </p>
+            <h4>Ejemplo</h4>
+            <div class="example-images">
+              <img
+                class="border example-image"
+                src="IMG/dentroJuego.png"
+                alt="Escena de Subercasaux con sus hijos en el rancho"
+              />
+              <img
+                class="border example-image"
+                src="IMG/decision.png"
+                alt="Escena de decisión: salir en canoa o quedarse en el rancho"
+              />
+            </div>
+            <p>
+              Para hacer la aventura más inmersiva, agregamos sonidos y música.
+              Además, la historia tiene cuatro finales diferentes.
+            </p>
+            <h3>Segundo trabajo</h3>
+            <p>
+              Hicimos un juego interactivo en el que caen piedras por un río, al que
+              decidimos llamar «Subercasaux en el río». Esta parte ocurre después
+              de la decisión de que Subercasaux salga al río para buscar ayuda.
+            </p>
+            <h4>Ejemplo</h4>
+            <div class="example-images">
+              <img
+                class="border example-image"
+                src="IMG/Inicio.png"
+                alt="Inicio del juego Subercasaux en el río"
+              />
+              <img
+                class="border example-image"
+                src="IMG/juego.png"
+                alt="Escena del juego Subercasaux en el río"
+              />
+            </div>
+            <div class="row">
+              <div class="collapsible">
+                <input id="collapsible-juego" type="checkbox" name="collapsible-juego" />
+                <label for="collapsible-juego">Cómo hicimos el juego</label>
+                <div class="collapsible-body">
+                  <span>
+                    El juego fue trabajado con cinco clases diferentes que fuimos
+                    instanciando. También usamos distintos grupos de sprites
+                    creados por nosotros para generar las animaciones. Las piedras
+                    y sus tamaños aparecen de forma aleatoria.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sprites">
+        <div class="row">
+          <div class="section-row-content">
+            <h2>Sprites</h2>
+            <p>
+              Todo el segundo trabajo fue desarrollado con sprites creados por
+              nosotros mismos: el personaje principal, las rocas, los elementos de
+              la interfaz de usuario (UI) y los escudos.
+            </p>
+            <div class="row flex-spaces tabs">
+              <input id="tab1" type="radio" name="tabs" checked />
+              <label for="tab1">Subercasaux</label>
+
+              <input id="tab2" type="radio" name="tabs" />
+              <label for="tab2">Escudo</label>
+
+              <input id="tab3" type="radio" name="tabs" />
+              <label for="tab3">UI</label>
+
+              <input id="tab4" type="radio" name="tabs" />
+              <label for="tab4">Rocas</label>
+
+              <div class="content" id="content1">
+                <p>
+                  Esta es una sola imagen de ejemplo. El personaje está formado por
+                  muchas imágenes que, al mostrarse en orden y en un tiempo
+                  determinado, generan la sensación de movimiento.
+                </p>
+                <div class="sprite-gallery">
+                  <img
+                    class="border sprite-image"
+                    src="IMG/Subercasaux.png"
+                    alt="Sprite de Subercasaux"
+                  />
+                </div>
+              </div>
+              <div class="content" id="content2">
+                <p>
+                  El escudo se recoge mientras se avanza por el río. Estas tres
+                  imágenes, al mostrarse rápidamente una tras otra cuando lo tienes
+                  puesto, parecen una animación.
+                </p>
+                <div class="sprite-gallery">
+                  <img class="border sprite-image" src="IMG/escudo_01.png" alt="Primer sprite del escudo" />
+                  <img class="border sprite-image" src="IMG/escudo_02.png" alt="Segundo sprite del escudo" />
+                  <img class="border sprite-image" src="IMG/escudo_03.png" alt="Tercer sprite del escudo" />
+                </div>
+              </div>
+              <div class="content" id="content3">
+                <p>
+                  Los botones aparecen por todo el juego y nos sirven para marcar
+                  los pasos entre las distintas pantallas.
+                </p>
+                <div class="sprite-gallery">
+                  <img class="border sprite-image" src="IMG/boton0.png" alt="Sprite de botón del juego" />
+                  <img class="border sprite-image" src="IMG/boton1.png" alt="Segundo sprite de botón del juego" />
+                </div>
+              </div>
+              <div class="content" id="content4">
+                <p>
+                  Estas son las rocas que pueden aparecer en el juego. Van saliendo
+                  en distintos momentos mientras avanzas por el río.
+                </p>
+                <div class="sprite-gallery">
+                  <img class="border sprite-image" src="IMG/roca0.png" alt="Sprite de roca 0" />
+                  <img class="border sprite-image" src="IMG/roca1.png" alt="Sprite de roca 1" />
+                  <img class="border sprite-image" src="IMG/roca2.png" alt="Sprite de roca 2" />
+                  <img class="border sprite-image" src="IMG/roca3.png" alt="Sprite de roca 3" />
+                  <img class="border sprite-image" src="IMG/roca4.png" alt="Sprite de roca 4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="juego">
+        <div class="row">
+          <div class="section-row-content">
+            <h2>Juego</h2>
+            <iframe
+              class="game-frame"
+              src="tpfinalparte2/index.html"
+              title="Subercasaux en el río"
+              allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
